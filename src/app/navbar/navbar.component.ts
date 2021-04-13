@@ -13,6 +13,10 @@ export class NavbarComponent implements OnInit {
   sticky = false;
   elementPosition: any;
 
+  darkButton = document.getElementById('dark');
+  lightButton = document.getElementById('light');
+  body = document.body;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -35,5 +39,13 @@ export class NavbarComponent implements OnInit {
         this.sticky = false;
       }
     }
+
+  turnToDark(): void {
+    this.body.classList.replace('light', 'dark');
+  }
+
+  turnToLight(): void {
+    this.body.classList.replace('dark', 'light');
+  }
 
 }

@@ -1,0 +1,24 @@
+body {
+  color: var(--text);
+  background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none !important;
+}
+
+h3 {
+  text-align: center !important;
+}
+
+.light {
+  --bg: var(--gray0);
+  --text: var(--gray6);
+}
+
+.dark {
+  --bg: var(--gray5);
+  --text: var(--gray0);
+}
