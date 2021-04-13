@@ -4,6 +4,10 @@ body {
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
+main {
+  text-align: center;
+}
+
 a {
   color: currentColor;
   text-decoration: none !important;
@@ -11,6 +15,7 @@ a {
 
 h3 {
   text-align: center !important;
+  margin-top: 2rem;
 }
 
 h5 {
@@ -27,3 +32,51 @@ h5 {
   --bg: var(--gray5);
   --text: var(--gray0);
 }
+
+/*------------------------*/
+/*---- Media Queries ----*/
+/*----------------------*/
+
+  /* mobile screens */
+  @media screen and (max-width: 575px)
+  {
+    main {
+      padding-top: 2rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  /* tablet screens */
+
+  @media screen and (min-width: 576px) and (max-width: 959px)
+  {
+    main {
+      padding-top: 2rem;
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  /* tablet landscape & desktop screens */
+  @media screen and (min-width: 960px) and (max-width: 1199px)
+  {
+    main {
+      padding-top: 2rem;
+      padding-right: 4rem;
+      padding-left: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  /* large screens */
+  @media screen and (min-width: 1200px)
+  {
+    main {
+      padding-top: 2rem;
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+  }
