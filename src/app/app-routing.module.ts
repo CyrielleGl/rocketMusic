@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PresentationComponent } from './presentation/presentation.component';
+import { SectionLabelComponent } from './sections/section-label/section-label.component';
+import { SectionMusiciensComponent } from './sections/section-musiciens/section-musiciens.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
-  {path: 'presentation', component : PresentationComponent},
+  {path: 'musiciens', component: SectionMusiciensComponent},
+  {path: 'label', component: SectionLabelComponent}
 ];
 
 @NgModule({

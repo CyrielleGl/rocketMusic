@@ -3,9 +3,7 @@
 <app-navbar></app-navbar>
 
 <main>
-
-  <app-presentation id="presentation"></app-presentation>
-
+<router-outlet></router-outlet>
 </main>
 
-<app-footer [yearNow]="yearNow" [appTitle]="appTitle"></app-footer>
+<app-footer class="fixed-bottom" [yearNow]="yearNow" [appTitle]="appTitle"></app-footer>

@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { PresentationComponent } from './presentation/presentation.component';
 import { FooterComponent } from './footer/footer.component';
+import { SectionMusiciensComponent } from './sections/section-musiciens/section-musiciens.component';
+import { SectionLabelComponent } from './sections/section-label/section-label.component';
 
 
 @NgModule({
@@ -14,8 +15,9 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     NavbarComponent,
-    PresentationComponent,
-    FooterComponent
+    FooterComponent,
+    SectionMusiciensComponent,
+    SectionLabelComponent
   ],
   imports: [
     BrowserModule,

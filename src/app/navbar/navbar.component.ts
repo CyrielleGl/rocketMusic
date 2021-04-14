@@ -22,30 +22,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToPresentation(frag: string): void {
-    this.router.navigate(['/presentation'], {fragment: frag})
-  }
-
-  ngAfterViewInit(): any {
-    this.elementPosition = this.menuElement.nativeElement.offsetTop;
-  }
-
-  @HostListener('window:scroll', ['$event'])
-    handleScroll(): void {
-      const windowScroll = window.pageYOffset;
-      if(windowScroll >= this.elementPosition){
-        this.sticky = true;
-      } else {
-        this.sticky = false;
-      }
+  changeTheme(){
+    if(this.body.classList.value==='light'){
+      this.body.classList.replace('light', 'dark');
+    }else{
+      this.body.classList.replace('dark', 'light');
     }
 
-  turnToDark(): void {
-    this.body.classList.replace('light', 'dark');
-  }
-
-  turnToLight(): void {
-    this.body.classList.replace('dark', 'light');
-  }
-
+    }
 }
