@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SectionMusiciensComponent } from './sections/section-musiciens/section-musiciens.component';
 import { SectionLabelComponent } from './sections/section-label/section-label.component';
+import { SectionSoutienComponent } from './sections/section-soutien/section-soutien.component';
+import { SectionContactComponent } from './sections/section-contact/section-contact.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { SectionLabelComponent } from './sections/section-label/section-label.co
     NavbarComponent,
     FooterComponent,
     SectionMusiciensComponent,
-    SectionLabelComponent
+    SectionLabelComponent,
+    SectionSoutienComponent,
+    SectionContactComponent
   ],
   imports: [
     BrowserModule,
